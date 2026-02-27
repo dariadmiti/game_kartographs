@@ -1,0 +1,4 @@
+flet==0.81.0
+flet-cli==0.81.0
+flet-web==0.81.0
+flet-desktop==0.81.0

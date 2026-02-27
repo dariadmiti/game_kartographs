@@ -1,4 +1,4 @@
-import base64
+﻿import base64
 from pathlib import Path
 
 import flet as ft
@@ -132,7 +132,7 @@ class MapEditorApp:
                         content=ft.Column(
                             controls=[
                                 ft.Image(src=self.texture_src[tex_name], width=44, height=44, fit=ft.BoxFit.CONTAIN),
-                                ft.Text(tex_name, size=12),
+                                ft.Text(tex_name, size=8),
                             ],
                             horizontal_alignment=ft.CrossAxisAlignment.CENTER,
                             spacing=2,

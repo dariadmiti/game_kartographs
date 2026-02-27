@@ -126,13 +126,13 @@ class MapEditorApp:
         for tex_name in TEXTURE_FILES.keys():
             texture_buttons.append(
                 ft.Container(
-                    width=96,
+                    width=200,
                     content=ft.ElevatedButton(
                         on_click=lambda e, t=tex_name: self.set_texture(t),
                         content=ft.Column(
                             controls=[
-                                ft.Image(src=self.texture_src[tex_name], width=44, height=44, fit=ft.BoxFit.CONTAIN),
-                                ft.Text(tex_name, size=8),
+                                ft.Image(src=self.texture_src[tex_name], width=70, height=70, fit=ft.BoxFit.CONTAIN),
+                                ft.Text(tex_name, size=12),
                             ],
                             horizontal_alignment=ft.CrossAxisAlignment.CENTER,
                             spacing=2,
